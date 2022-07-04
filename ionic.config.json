@@ -1,0 +1,7 @@
+{
+  "name": "samagri",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
