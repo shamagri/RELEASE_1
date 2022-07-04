@@ -29,3 +29,20 @@
     font-family: 'Roboto';    //This is what we are going to call
     src: url('assets/fonts/Roboto-Regular.ttf');
   }
+
+  ion-searchbar{
+    .searchbar-input-container{
+      padding-top: 14px !important;
+      padding-bottom: 12px !important;
+      font-size: 18px !important;
+    }
+    .searchbar-search-icon{
+      top: 30px !important;
+      width: 25px;
+      height: 25px;
+    }
+
+    .searchbar-input.sc-ion-searchbar-md{
+      height: 3.3rem !important;
+    }
+  }

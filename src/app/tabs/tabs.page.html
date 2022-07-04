@@ -1,23 +1,23 @@
-<ion-tabs>
+<ion-tabs #tabs (ionTabsDidChange)="setCurrentTab($event)">
 
   <ion-tab-bar slot="bottom">
     <ion-tab-button tab="home">
-      <ion-icon name="home-outline"></ion-icon>
+      <ion-icon [name]="selectTab == 'home' ?  'home' : 'home-outline'"></ion-icon>
       <ion-label>Home</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="category">
-      <ion-icon name="grid-outline"></ion-icon>
+      <ion-icon [name]="selectTab == 'category' ?  'grid' : 'grid-outline'"></ion-icon>
       <ion-label>Category</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="favorite">
-      <ion-icon name="heart"></ion-icon>
+      <ion-icon [name]="selectTab == 'favorite' ?  'heart' : 'heart-outline'"></ion-icon>
       <ion-label>Favorite</ion-label>
     </ion-tab-button>
 
     <ion-tab-button tab="more">
-      <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+      <ion-icon [name]="selectTab == 'more' ?  'ellipsis-vertical' : 'ellipsis-vertical-outline'"></ion-icon>
       <ion-label>More</ion-label>
     </ion-tab-button>
   </ion-tab-bar>
